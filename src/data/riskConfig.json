@@ -1,0 +1,56 @@
+{
+  "organization": "Northstar Financial",
+  "syntheticAccountCount": 24,
+  "syntheticTransactionCount": 120,
+  "reportingCurrency": "USD",
+  "amlReportingThreshold": 10000,
+  "capital": {
+    "cet1Capital": 1160000000,
+    "additionalTier1Capital": 180000000,
+    "tier2Capital": 250000000,
+    "riskWeightedAssets": 9200000000
+  },
+  "policies": [
+    {
+      "id": "FRAUD-4.2",
+      "name": "Cross-border and transaction velocity",
+      "reference": "Fraud policy §4.2",
+      "text": "Review material cross-border transfers that are unusually large relative to a customer's historical transaction average."
+    },
+    {
+      "id": "FRAUD-2.8",
+      "name": "Unfamiliar customer activity",
+      "reference": "Fraud policy §2.8",
+      "text": "Review transactions from unfamiliar locations and unusual changes in customer payment behavior."
+    },
+    {
+      "id": "AML-STR-01",
+      "name": "Potential transaction structuring",
+      "reference": "AML typology · FATF Recommendation 20",
+      "text": "Review repeated cash-equivalent or wire transfers below a reporting threshold when their aggregate value is material."
+    },
+    {
+      "id": "BASEL-CET1",
+      "name": "Basel III capital adequacy",
+      "reference": "Basel III · CET1 minimum 4.5%",
+      "text": "Common Equity Tier 1 capital ratio is Common Equity Tier 1 capital divided by risk-weighted assets. The Basel III minimum is 4.5% before applicable buffers."
+    },
+    {
+      "id": "BASEL-TIER1",
+      "name": "Basel III Tier 1 capital",
+      "reference": "Basel III · Tier 1 minimum 6.0%",
+      "text": "Tier 1 capital ratio is Tier 1 capital divided by risk-weighted assets. The Basel III minimum is 6.0% before applicable buffers."
+    },
+    {
+      "id": "KYC-6.1",
+      "name": "Customer due diligence refresh",
+      "reference": "KYC policy §6.1",
+      "text": "Refresh customer due diligence based on customer risk classification and review schedule."
+    }
+  ],
+  "quickPrompts": [
+    "Why was the highest-risk transaction flagged?",
+    "Summarize today's AML alerts",
+    "Show Basel III capital ratios"
+  ]
+}
